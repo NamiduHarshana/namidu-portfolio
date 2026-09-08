@@ -37,7 +37,6 @@ export default function Experience() {
             <div className="border-l border-[#183447] pl-6 relative">
               <span className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-[#00C8FF]" />
               <h3 className="font-display text-lg text-[#F5F9FC] font-medium">{e.institution}</h3>
-              <p className="text-[#A8B8C5] text-sm">{e.degree}</p>
             </div>
           </div>
         ))}
