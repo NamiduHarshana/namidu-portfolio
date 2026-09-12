@@ -15,6 +15,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "sitesafe-ai",
+    title: "SiteSafe AI",
+    category: "AI / ML",
+    tagline: "Real-time construction site PPE compliance monitoring",
+    description:
+      "An AI-powered safety monitoring system that analyzes construction site video/CCTV feeds in real time and flags workers not wearing required PPE (hardhats, safety vests). Uses a dual YOLOv8 model pipeline merged per frame, a custom multi-object tracker for stable worker IDs, and hysteresis-based voting to eliminate frame-to-frame false positives.",
+    features: [
+      "Dual YOLOv8 models — each specialized for the PPE type it detects most accurately, merged per frame",
+      "Custom tracker: IoU matching + color-histogram re-identification for stable worker IDs across occlusion",
+      "Hysteresis-based violation voting — rolling-window logic eliminates flicker and false alarms",
+      "Dual input source — recorded video or a live RTSP IP camera, switchable at runtime",
+    ],
+    technologies: ["Python", "FastAPI", "OpenCV", "YOLOv8"],
+    links: [],
+    demoVideo: "/videos/sitesafe-ai.mp4",
+    poster: "/images/posters/sitesafe-ai.jpg",
+    accent: "#29D9FF",
+  },
+  {
     slug: "f1-tyre-predictor",
     title: "F1 Tyre Degradation Predictor",
     category: "AI / ML",
